@@ -83,7 +83,7 @@ namespace Distribuidora_de_caroos
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Form1 loginnn = new Form1();
+            Login loginnn = new Login();
             this.Hide();
             loginnn.Show();
         }

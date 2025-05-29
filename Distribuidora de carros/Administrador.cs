@@ -19,21 +19,21 @@ namespace Distribuidora_de_caroos
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 inicio = new Form1();
+            Login inicio = new Login();
             this.Hide();
             inicio.Show();
         }
 
         private void btnSalirE_Click(object sender, EventArgs e)
         {
-            Form1 inicio = new Form1();
+            Login inicio = new Login();
             this.Hide();
             inicio.Show();
         }
 
         private void btnSalirB_Click(object sender, EventArgs e)
         {
-            Form1 inicio = new Form1();
+            Login inicio = new Login();
             this.Hide();
             inicio.Show();
         }
