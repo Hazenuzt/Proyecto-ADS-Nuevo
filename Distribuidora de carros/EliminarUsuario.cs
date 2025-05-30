@@ -50,8 +50,14 @@ namespace Distribuidora_de_caroos
             frmad.Visible = true;
             this.Visible = false;
         }
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Login frmlog = new Login();
+            this.Close();
+            frmlog.ShowDialog();
+        }
 
-        private void dgvusuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvusuarios_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -66,7 +72,6 @@ namespace Distribuidora_de_caroos
                         cmd.Parameters.AddWithValue("@Id", idUsuario);
                         connection.Open();
                         int result = cmd.ExecuteNonQuery();
-
                         if (result > 0)
                         {
                             dgvusuarios.Rows.RemoveAt(e.RowIndex); //eliminando del datagris
@@ -83,13 +88,8 @@ namespace Distribuidora_de_caroos
                     }
                 }
             }
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Login frmlog = new Login();
-            this.Close();
-            frmlog.ShowDialog();
+            else
+                MessageBox.Show("No se ha seleccionado una fila válida");
         }
     }
 }

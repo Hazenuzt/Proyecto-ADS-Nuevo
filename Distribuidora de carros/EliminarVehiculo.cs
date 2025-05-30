@@ -57,6 +57,7 @@ namespace Distribuidora_de_caroos
 
         private void dgvvehiculos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            MessageBox.Show("se entra al evento doble clcik");
             if (e.RowIndex >= 0)
             {
                 //obteniendo el id de la fila seleccionada

@@ -55,6 +55,7 @@
             this.dgvusuarios.RowTemplate.Height = 24;
             this.dgvusuarios.Size = new System.Drawing.Size(699, 196);
             this.dgvusuarios.TabIndex = 1;
+            this.dgvusuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusuarios_CellDoubleClick_1);
             // 
             // btnSalir
             // 
@@ -82,7 +83,7 @@
             this.btnregresar.UseVisualStyleBackColor = false;
             this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
             // 
-            // ElimnarUsuario
+            // EliminarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,7 +93,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvusuarios);
             this.Controls.Add(this.label1);
-            this.Name = "ElimnarUsuario";
+            this.Name = "EliminarUsuario";
             this.Text = "ElimnarUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.dgvusuarios)).EndInit();
             this.ResumeLayout(false);
