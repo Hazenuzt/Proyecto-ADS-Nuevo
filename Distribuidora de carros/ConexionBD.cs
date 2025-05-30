@@ -108,7 +108,7 @@ namespace Distribuidora_de_caroos
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al validar el usuario: " + ex.Message);
+                MessageBox.Show("Error al validar el usuario: " + ex.Message);
             }
             return tipoUsuario;
         }

@@ -53,7 +53,9 @@
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionBD.cs" />
-    <Compile Include="Login.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
@@ -77,7 +79,9 @@
     <Compile Include="MarcaSeleccionada.Designer.cs">
       <DependentUpon>MarcaSeleccionada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Singup.cs" />
+    <Compile Include="Singup.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Singup.Designer.cs">
       <DependentUpon>Singup.cs</DependentUpon>
     </Compile>
