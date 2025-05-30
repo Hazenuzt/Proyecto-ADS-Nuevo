@@ -47,6 +47,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnEliminarCarro = new System.Windows.Forms.Button();
             this.btnSalirB = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,7 +66,7 @@
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(797, 436);
+            this.tabControl1.Size = new System.Drawing.Size(452, 436);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -82,7 +83,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(789, 406);
+            this.tabPage1.Size = new System.Drawing.Size(444, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Añadir";
             // 
@@ -181,7 +182,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(789, 406);
+            this.tabPage2.Size = new System.Drawing.Size(444, 406);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editar";
             // 
@@ -257,21 +258,35 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.btnEliminarCarro);
             this.tabPage3.Controls.Add(this.btnSalirB);
             this.tabPage3.Controls.Add(this.btnEliminar);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(789, 406);
+            this.tabPage3.Size = new System.Drawing.Size(444, 406);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Borrar";
+            // 
+            // btnEliminarCarro
+            // 
+            this.btnEliminarCarro.AutoSize = true;
+            this.btnEliminarCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(154)))), ((int)(((byte)(190)))));
+            this.btnEliminarCarro.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarCarro.Location = new System.Drawing.Point(160, 226);
+            this.btnEliminarCarro.Name = "btnEliminarCarro";
+            this.btnEliminarCarro.Size = new System.Drawing.Size(97, 36);
+            this.btnEliminarCarro.TabIndex = 8;
+            this.btnEliminarCarro.Text = "VEHÍCULO";
+            this.btnEliminarCarro.UseVisualStyleBackColor = false;
+            this.btnEliminarCarro.Click += new System.EventHandler(this.btnEliminarCarro_Click);
             // 
             // btnSalirB
             // 
             this.btnSalirB.AutoSize = true;
             this.btnSalirB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(154)))), ((int)(((byte)(190)))));
             this.btnSalirB.ForeColor = System.Drawing.Color.White;
-            this.btnSalirB.Location = new System.Drawing.Point(221, 163);
+            this.btnSalirB.Location = new System.Drawing.Point(160, 311);
             this.btnSalirB.Name = "btnSalirB";
             this.btnSalirB.Size = new System.Drawing.Size(97, 36);
             this.btnSalirB.TabIndex = 7;
@@ -283,29 +298,31 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(154)))), ((int)(((byte)(190)))));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(78, 163);
+            this.btnEliminar.Location = new System.Drawing.Point(156, 142);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(101, 36);
             this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "BORRAR";
+            this.btnEliminar.Text = "USUARIO";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(50, 81);
+            this.label11.Location = new System.Drawing.Point(82, 65);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(21, 17);
+            this.label11.Size = new System.Drawing.Size(251, 17);
             this.label11.TabIndex = 0;
-            this.label11.Text = "id";
+            this.label11.Text = "Selecciones una opción a borrar:";
             // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(186)))), ((int)(((byte)(83)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(455, 450);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Administrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
@@ -344,5 +361,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnSalirE;
         private System.Windows.Forms.Button btnSalirB;
+        private System.Windows.Forms.Button btnEliminarCarro;
     }
 }

@@ -37,5 +37,21 @@ namespace Distribuidora_de_caroos
             this.Hide();
             inicio.Show();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ElimnarUsuario frmDltUser = new ElimnarUsuario();
+            this.Close();
+            frmDltUser.ShowDialog();
+            
+        }
+
+        private void btnEliminarCarro_Click(object sender, EventArgs e)
+        {
+            EliminarVehículo frmDltCar = new EliminarVehículo(); 
+            this.Close();
+            frmDltCar.ShowDialog();
+           
+        }
     }
 }

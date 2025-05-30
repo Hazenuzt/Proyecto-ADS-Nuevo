@@ -53,6 +53,18 @@
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="EliminarVehículo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarVehículo.Designer.cs">
+      <DependentUpon>EliminarVehículo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElimnarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElimnarUsuario.Designer.cs">
+      <DependentUpon>ElimnarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     </Compile>
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarVehículo.resx">
+      <DependentUpon>EliminarVehículo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElimnarUsuario.resx">
+      <DependentUpon>ElimnarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
