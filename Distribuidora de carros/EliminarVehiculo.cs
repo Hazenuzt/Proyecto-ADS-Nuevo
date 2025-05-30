@@ -57,7 +57,6 @@ namespace Distribuidora_de_caroos
 
         private void dgvvehiculos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show("se entra al evento doble clcik");
             if (e.RowIndex >= 0)
             {
                 //obteniendo el id de la fila seleccionada
@@ -66,7 +65,7 @@ namespace Distribuidora_de_caroos
                 {
                     try
                     {
-                        string query = "DELETE FROM Usuarios WHERE Id_Usuario = @Id";
+                        string query = "DELETE FROM Vehiculo WHERE Id_Vehiculo = @Id";
                         SqlCommand cmd = new SqlCommand(query, connection);
                         cmd.Parameters.AddWithValue("@Id", idVehiculo);
                         connection.Open();

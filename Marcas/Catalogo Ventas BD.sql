@@ -72,6 +72,8 @@ create table Imagenes_Vehiculo(
 	Ruta_Imagen varchar (max) not null,
 
 	foreign key (Id_Vehiculo) references Vehiculo (Id_Vehiculo)
+	on delete cascade
+	on update cascade,
 );
 go
 
