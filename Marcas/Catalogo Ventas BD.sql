@@ -201,21 +201,21 @@ INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Camry' AND Año = 2023), 'Marcas/Toyota/camry_lateral.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Tacoma' AND Año = 2024), 'Marcas/Toyota/tacoma_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Tacoma' AND Año = 2024), 'Marcas/Toyota/tacoma_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Qashqai' AND Año = 2022), 'Marcas/Nissan/qashqai_frente.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Qashqai' AND Año = 2022), 'Marcas/Nissan/qashqai_frente.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Kicks' AND Año = 2023), 'Marcas/Nissan/kicks_lateral.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Sentra' AND Año = 2024), 'Marcas/Nissan/sentra_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Sentra' AND Año = 2024), 'Marcas/Nissan/sentra_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Frontier' AND Año = 2023), 'Marcas/Nissan/frontier_lateral.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Outlander' AND Año = 2024), 'Marcas/Mitsubishi/outlander_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Outlander' AND Año = 2024), 'Marcas/Mitsubishi/outlander_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'ASX' AND Año = 2023), 'Marcas/Mitsubishi/asx_lateral.jpg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'ASX' AND Año = 2023), 'Marcas/Mitsubishi/asx_lateral.jpeg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'L200' AND Año = 2024), 'Marcas/Mitsubishi/l200_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'L200' AND Año = 2024), 'Marcas/Mitsubishi/l200_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Mirage' AND Año = 2023), 'Marcas/Mitsubishi/mirage_lateral.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
@@ -223,15 +223,14 @@ INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'XV Crosstrek' AND Año = 2024), 'Marcas/Subaru/xv_crosstrek_lateral.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Impreza' AND Año = 2023), 'Marcas/Subaru/impreza_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Impreza' AND Año = 2023), 'Marcas/Subaru/impreza_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Outback' AND Año = 2024), 'Marcas/Subaru/outback_trasera.jpg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Outback' AND Año = 2024), 'Marcas/Subaru/outback_trasera.jpeg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'CX-5' AND Año = 2023), 'Marcas/Mazda/cx5_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'CX-5' AND Año = 2023), 'Marcas/Mazda/cx5_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'Mazda3' AND Año = 2024), 'Marcas/Mazda/mazda3_lateral.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
-((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'CX-30' AND Año = 2023), 'Marcas/Mazda/cx30_frontal.jpeg');
+((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'CX-30' AND Año = 2023), 'Marcas/Mazda/cx30_frontal.jpg');
 INSERT INTO Imagenes_Vehiculo (Id_Vehiculo, Ruta_Imagen) VALUES
 ((SELECT Id_Vehiculo FROM Vehiculo WHERE Modelo = 'MX-5 Miata' AND Año = 2024), 'Marcas/Mazda/mx5_miata_lateral.jpg');
-
