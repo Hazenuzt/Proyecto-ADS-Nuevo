@@ -79,6 +79,12 @@
     <Compile Include="MarcaSeleccionada.Designer.cs">
       <DependentUpon>MarcaSeleccionada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Singup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singup.Designer.cs">
+      <DependentUpon>Singup.cs</DependentUpon>
+    </Compile>
     <Compile Include="VehiculoSeleccionado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="MarcaSeleccionada.resx">
       <DependentUpon>MarcaSeleccionada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Singup.resx">
+      <DependentUpon>Singup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VehiculoSeleccionado.resx">
       <DependentUpon>VehiculoSeleccionado.cs</DependentUpon>

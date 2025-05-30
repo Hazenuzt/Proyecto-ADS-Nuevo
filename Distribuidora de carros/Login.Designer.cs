@@ -1,6 +1,6 @@
 ﻿namespace Distribuidora_de_caroos
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,9 +38,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnProgramadores = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrarMac = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pcb_logo = new System.Windows.Forms.PictureBox();
@@ -163,6 +166,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(26)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.btnCerrarMac);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
@@ -170,6 +174,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1063, 95);
             this.panel1.TabIndex = 15;
+            // 
+            // btnCerrarMac
+            // 
+            this.btnCerrarMac.BackColor = System.Drawing.Color.Tomato;
+            this.btnCerrarMac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarMac.FlatAppearance.BorderSize = 0;
+            this.btnCerrarMac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarMac.Location = new System.Drawing.Point(1015, 13);
+            this.btnCerrarMac.Name = "btnCerrarMac";
+            this.btnCerrarMac.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrarMac.TabIndex = 31;
+            this.btnCerrarMac.UseVisualStyleBackColor = false;
+            this.btnCerrarMac.Click += new System.EventHandler(this.btnCerrarMac_Click);
             // 
             // label6
             // 
@@ -191,19 +208,21 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(11, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(417, 27);
+            this.label5.Size = new System.Drawing.Size(403, 26);
             this.label5.TabIndex = 17;
             this.label5.Text = "Ingresa tus datos para iniciar sesión";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.linkLabel1);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtpassword);
             this.groupBox1.Controls.Add(this.txtuser);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnInicio);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 176);
+            this.groupBox1.Location = new System.Drawing.Point(30, 169);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -211,9 +230,33 @@
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel1.Location = new System.Drawing.Point(213, 323);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(97, 21);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "registrate";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(20, 323);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(176, 21);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "nuevo usuario?.....";
+            // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(436, 102);
+            this.groupBox2.Location = new System.Drawing.Point(467, 102);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -225,7 +268,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(512, 130);
+            this.label4.Location = new System.Drawing.Point(527, 129);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(520, 203);
@@ -234,7 +277,7 @@
             // 
             // pcb_logo
             // 
-            this.pcb_logo.Location = new System.Drawing.Point(593, 319);
+            this.pcb_logo.Location = new System.Drawing.Point(612, 352);
             this.pcb_logo.Margin = new System.Windows.Forms.Padding(4);
             this.pcb_logo.Name = "pcb_logo";
             this.pcb_logo.Size = new System.Drawing.Size(320, 161);
@@ -242,7 +285,7 @@
             this.pcb_logo.TabIndex = 2;
             this.pcb_logo.TabStop = false;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -257,7 +300,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenida - Auto Lote \"Camila\"";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -288,6 +331,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pcb_logo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button btnCerrarMac;
     }
 }
 
