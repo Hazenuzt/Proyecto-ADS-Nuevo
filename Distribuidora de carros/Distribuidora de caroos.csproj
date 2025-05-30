@@ -54,6 +54,18 @@
     </Compile>
     <Compile Include="ConexionBD.cs" />
     <Compile Include="DatosVehiculosBD.cs" />
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarVehiculo.Designer.cs">
+      <DependentUpon>EliminarVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
