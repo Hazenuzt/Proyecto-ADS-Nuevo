@@ -53,6 +53,7 @@
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="DatosVehiculosBD.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

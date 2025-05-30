@@ -13,7 +13,8 @@ namespace Distribuidora_de_caroos
     public partial class MarcaSeleccionada : Form
     {
         private InicioUsuario form1;
-
+        private string marcaSeleccionada;
+        private CargarBD carga;
 
 
         public MarcaSeleccionada(InicioUsuario form1, string marca)
@@ -24,12 +25,34 @@ namespace Distribuidora_de_caroos
             label_NombreMarca.Text = marca;
             ImagenLogo(marca);
 
-            cmb_auto.Items.Add("Toyota Hillux");
+            /*cmb_auto.Items.Add("Toyota Hillux");
             cmb_auto.Items.Add("Toyota Tacoma");
-            cmb_auto.Items.Add("Toyota Corolla");
+            cmb_auto.Items.Add("Toyota Corolla");*/
 
-            
+            carga = new CargarBD();
+            CargarModelos(marca);
+        }
 
+        private void CargarModelos(string marca)
+        {
+            try
+            {
+                List<string> modelos = carga.ObtenerNombresModelos(marca);
+                cmb_auto.Items.Clear();
+
+                foreach (string modelo in modelos)
+                {
+                    cmb_auto.Items.Add(modelo);
+                }
+                if (cmb_auto.Items.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron modelos para esa carga {marca}", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar modelos: " + ex.Message, "ex.message, #Error");
+            }
         }
 
         private void ImagenLogo(string marca)

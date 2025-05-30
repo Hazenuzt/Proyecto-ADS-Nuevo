@@ -18,6 +18,7 @@ namespace Distribuidora_de_caroos
     public partial class InicioUsuario : Form
     {
         public static string seleccion;
+        private CargarBD vehiCarga;
 
         public InicioUsuario()
         {
@@ -25,17 +26,37 @@ namespace Distribuidora_de_caroos
 
             pcb_logo.Image = Properties.Resources.Logo;
 
-            // Agregar marcas al ComboBox
-            cmbSeleccionMarcas.Items.Add("Toyota");
-            cmbSeleccionMarcas.Items.Add("Honda");
-            cmbSeleccionMarcas.Items.Add("Nissan");
-            cmbSeleccionMarcas.Items.Add("Mitsubishi");
-            cmbSeleccionMarcas.Items.Add("Subaru");
+            vehiCarga = new CargarBD();
+            CargarMarcas();
 
             // Evento para cambiar imagen cuando se seleccione una marca
             cmbSeleccionMarcas.SelectedIndexChanged += cmbSeleccionMarcas_SelectedIndexChanged;
         }
 
+        private void CargarMarcas()
+        {
+            try
+            {
+                List<string> marcas = vehiCarga.ObtenerNombresMarcas();
+                cmbSeleccionMarcas.Items.Clear();
+
+                foreach (string marca in marcas) //recorre la lista para agregar los datos al combobox
+                {
+                    cmbSeleccionMarcas.Items.Add(marca);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar marcas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //si el cargar marcas por medio de bd no funciona
+                // Agregar marcas al ComboBox
+                cmbSeleccionMarcas.Items.Add("Toyota");
+                cmbSeleccionMarcas.Items.Add("Honda");
+                cmbSeleccionMarcas.Items.Add("Nissan");
+                cmbSeleccionMarcas.Items.Add("Mitsubishi");
+                cmbSeleccionMarcas.Items.Add("Subaru");
+            }
+        }
         public string Seleccion
         {
             get => seleccion;
