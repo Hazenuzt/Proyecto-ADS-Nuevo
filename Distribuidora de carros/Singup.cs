@@ -51,7 +51,6 @@ namespace Distribuidora_de_caroos
             {
                 MessageBox.Show("La contraseña debe tener por lo menos cuatro caracteres","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtConfrimPass.Clear();
-                txtConfrimPass.Clear();
                 txtContraseña.Focus();
                 return;
             }
