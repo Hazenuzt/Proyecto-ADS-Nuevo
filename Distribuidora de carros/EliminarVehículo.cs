@@ -89,6 +89,8 @@ namespace Distribuidora_de_caroos
                     }
                 }
             }
+            else
+                MessageBox.Show("Seleccion una fila válida");
         }
     }
 }

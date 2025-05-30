@@ -64,7 +64,7 @@ namespace Distribuidora_de_caroos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
